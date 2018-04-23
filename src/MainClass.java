@@ -21,7 +21,7 @@ public class MainClass {
 
         System.out.println("Incepe...");
 
-        int n, a,result = 0;
+        int n, a, counter = 0;
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Citire n...");
@@ -31,13 +31,13 @@ public class MainClass {
         }
         while (!(n <= 100 && n > 0));
 
-        System.out.println("Citire a");
+       /* System.out.println("Citire a");
 
         do {
             a = sc.nextInt();
 
         }
-        while (!(a > -10000 && a < 10000));
+        while (!(a > -10000 && a < 10000));*/
 
         System.out.println("Adaugare valori: ");
 
@@ -49,9 +49,23 @@ public class MainClass {
             }
             while (!(v.get(i) > -10000 && v.get(i) < 10000));
         }
-        result = sub(v, n, a);
 
-        System.out.println(result);
+        for (Integer val: v)
+        {
+            if( sub(v, n, val) != 1)
+            {
+                System.out.println("NU");
+                break;
+            }
+            else
+            {
+                counter++;
+            }
+        }
+
+        if ( counter == n) {
+            System.out.println("Da");
+        }
 
 
     }
