@@ -1,0 +1,14 @@
+Un numar n se numeste extraprim daca atât el, cât si orice numar obtinut prin permutarea
+circulara a cifrelor lui n, sunt numere prime. De exemplu, numarul 197 este un numar
+extraprim deoarece 197, 971, 719 sunt numere prime. Numarul 23 nu este extraprim
+deoarece 32 nu este prim.
+a) Scrieti definitia completa a unui subprogram f, cu un parametru, subprogram care:
+- primeste prin intermediul parametrului a un numar natural cu cel mult 2 cifre (a>1) ;
+- returneaza suma tuturor exponentilor din descompunerea în factori primi a valorii
+parametrului a.
+Exemplu: pentru a=90 subprogramul va returna valoarea 4, deoarece a=2*32
+*5 si
+1+2+1=4. (4p.)
+b) Scrieti un program C/C++ care citeste de la tastatura un numar natural n, 2=n=99, si
+care, folosind apeluri utile ale subprogramului f, verifica daca n este un numar extraprim si
+afiseaza pe ecran, în caz afirmativ mesajul DA, iar altfel mesajul NU.
