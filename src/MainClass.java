@@ -43,6 +43,7 @@ public class MainClass {
 
         List<Integer> v;
         v = new ArrayList<Integer>();
+
         for (int i = 0; i < n; i++) {
             do {
                 v.add(sc.nextInt());
